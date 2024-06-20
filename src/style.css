@@ -1,0 +1,276 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1f2937;
+}
+
+i {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #bef264;
+}
+.navbar {
+  background-color: #111827;
+  color: #fff;
+  padding: 10px 60px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+}
+
+.cart {
+  position: relative;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.cartAmount {
+  font-size: 16px;
+  background-color: #f97316;
+  color: #fff;
+  position: absolute;
+  top: -7px;
+  right: -8px;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.shop {
+  /* display: grid;
+    grid-template-columns: repeat(4, 223px); */
+  display: grid;
+  grid-template-columns: repeat(4, 225px);
+  gap: 30px;
+  justify-content: center;
+}
+
+@media (max-width: 986px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+  a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 500px) {
+  .shop {
+    grid-template-columns: repeat(2, 135px);
+    gap: 10px;
+  }
+}
+
+.image-container {
+  width: 220px;
+  max-height: 400px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img {
+  width: 223px;
+}
+
+.item {
+  border: 2px solid #334155;
+  border-radius: 3px;
+  background: #111827;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+
+.details h3 {
+  color: #e4e4e7;
+}
+.details p {
+  color: #71717a;
+}
+
+.price-quantity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+.price-quantity h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: #bef264;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.bi-dash-lg {
+  color: #dc2626;
+}
+
+.quantity {
+  color: #e4e4e7;
+}
+
+.bi-plus {
+  color: #bef264;
+}
+
+.text-center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.HomeBtn {
+  background-color: #020617;
+  color: #bef264;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.bi-x-lg {
+  color: #e4e4e7;
+  font-weight: bold;
+  background: #dc2626;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.shopping-cart {
+  display: grid;
+  grid-template-columns: repeat(1, 320px);
+  justify-content: center;
+  gap: 15px;
+}
+
+.text-center h2 {
+  color: #e4e4e7;
+  font-size: 20px;
+}
+
+.details-cart {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+
+.cart-item {
+  border: 2px solid #334155;
+  display: flex;
+  background: #111827;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.title-price-x {
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+  flex-direction: column;
+}
+
+.title-price {
+  display: flex;
+  gap: 10px;
+}
+
+.title-price p {
+  color: #e4e4e7;
+}
+
+.cart-item-price {
+  background-color: #020617;
+  padding: 3px 6px;
+  border-radius: 6px;
+  color: #bef264;
+}
+
+.price-remove {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 30px;
+}
+
+.price-remove h3 {
+  color: #bef264;
+}
+
+.checkout,
+.removeAll {
+  background-color: #1c1c1c;
+  color: #fff;
+  border: none;
+  padding: 6px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.checkout {
+  background-color: #16a34a;
+}
+.removeAll {
+  background-color: #dc2626;
+}
+
+@media (max-width: 986px) {
+  .image-container {
+    width: 130px;
+    max-height: 400px;
+    overflow: hidden;
+  }
+  .img {
+    width: 180px;
+  }
+  .item {
+    border: 2px solid #334155;
+    border-radius: 3px;
+    width: 130px;
+  }
+  .details h3 {
+    font-size: 15px;
+  }
+
+  .shopping-cart {
+    display: grid;
+    grid-template-columns: repeat(1, 280px);
+    justify-content: center;
+    gap: 15px;
+  }
+}
+@media (max-width: 500px) {
+  .item {
+    border: 2px solid #334155;
+    border-radius: 3px;
+    width: 130px;
+  }
+  .img {
+    width: 130px;
+  }
+}
